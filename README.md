@@ -2,12 +2,19 @@
 A structured reference covering Python's inheritance system with clean, runnable examples.
 
 # Table of Contents
+<br>
 1.Inheritance
+<br>
 2.Multiple Inheritance
+<br>
 3.Multilevel Inheritance
+<br>
 4.super()
+<br>
 5.Instance Methods, Class Methods & Static Methods
+<br>
 6.Property Decorators
+<br>
 7.Operator Overloading
 
 ## Inheritance
