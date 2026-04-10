@@ -1,15 +1,18 @@
 # OOPs-inheritance
 A structured reference covering Python's inheritance system with clean, runnable examples.
-📑 Table of Contents
-Inheritance
-Multiple Inheritance
-Multilevel Inheritance
-super()
-Instance Methods, Class Methods & Static Methods
-Property Decorators
-Operator Overloading
-Inheritance
+
+# Table of Contents
+1.Inheritance
+2.Multiple Inheritance
+3.Multilevel Inheritance
+4.super()
+5.Instance Methods, Class Methods & Static Methods
+6.Property Decorators
+7.Operator Overloading
+
+## Inheritance
 A child class inherits attributes and methods from a parent class, allowing code reuse and extension.
+```python
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -34,9 +37,12 @@ cat = Cat("Whiskers")
 print(dog.speak())   # Rex says: Woof!
 print(cat.speak())   # Whiskers says: Meow!
 print(dog.name)      # Rex  ← inherited from Animal
-Key rule: If the child defines a method with the same name as the parent, it overrides it.
-Multiple Inheritance
+```
+**Key rule:** If the child defines a method with the same name as the parent, it overrides it.
+
+## Multiple Inheritance
 A class can inherit from more than one parent class.
+```python
 class Flyable:
     def fly(self):
         return "I can fly!"
@@ -58,12 +64,17 @@ class Duck(Flyable, Swimmable):
 donald = Duck("Donald")
 print(donald.describe())
 # Donald: I can fly! AND I can swim!
-MRO — Method Resolution Order
+```
+
+## MRO — Method Resolution Order
 When multiple parents share a method name, Python uses MRO (left → right) to decide which one runs.
+```python
 print(Duck.__mro__)
 # (<class 'Duck'>, <class 'Flyable'>, <class 'Swimmable'>, <class 'object'>)
-Multilevel Inheritance
+```
+## Multilevel Inheritance
 A chain of inheritance: Grandparent → Parent → Child.
+```python
 class Vehicle:
     def __init__(self, brand):
         self.brand = brand
@@ -93,8 +104,10 @@ class ElectricCar(Car):
 tesla = ElectricCar("Tesla", "Model 3", 500)
 print(tesla.info())
 # Brand: Tesla, Model: Model 3, Range: 500 km
-super()
+```
+# super()
 super() gives access to the parent class without hardcoding its name. Essential for safe inheritance chains.
+```python
 class Shape:
     def __init__(self, color):
         self.color = color
@@ -116,10 +129,13 @@ class Circle(Shape):
 c = Circle("red", 5)
 print(c.describe())
 # Color: red, Radius: 5
+```
 super() always follows the MRO, making it safe for multiple and multilevel inheritance.
-Methods
-Instance Method
+
+# Methods
+## Instance Method
 Operates on the instance (self). The default method type.
+```python
 class Counter:
     def __init__(self):
         self.count = 0
@@ -132,9 +148,12 @@ class Counter:
 c = Counter()
 print(c.increment())   # 1
 print(c.increment())   # 2
-Class Method
+```
+
+## Class Method
 Operates on the class (cls), not the instance. Decorated with @classmethod.
-Common use: alternative constructors.
+Common use: **alternative constructors.**
+```python
 class Person:
     species = "Homo sapiens"
 
@@ -155,8 +174,10 @@ class Person:
 p = Person.from_birth_year("Seven", 1995)
 print(p.name, p.age)          # Seven 29
 print(Person.get_species())   # Homo sapiens
-Static Method
+```
+## Static Method
 No self or cls. A plain utility function namespaced inside the class.
+```python
 class MathUtils:
     @staticmethod
     def add(a, b):
@@ -169,8 +190,10 @@ class MathUtils:
 
 print(MathUtils.add(3, 7))      # 10
 print(MathUtils.is_even(4))     # True
-Property Decorators
+```
+## Property Decorators
 @property lets you access a method like an attribute, with optional setter and deleter control.
+```python
 class Temperature:
     def __init__(self, celsius):
         self._celsius = celsius
@@ -198,8 +221,11 @@ temp.celsius = 100
 print(temp.fahrenheit)   # 212.0
 
 # temp.celsius = -300    # raises ValueError
-Operator Overloading
+```
+
+## Operator Overloading
 Define how operators (+, -, ==, <, etc.) behave on your custom objects using dunder methods.
+```python
 class Vector:
     def __init__(self, x, y):
         self.x = x
@@ -236,51 +262,5 @@ print(v1 * 3)     # Vector(6, 9)
 print(v1 == v2)   # False
 print(v1 < v2)    # False
 print(len(v1))    # 3
-Common Dunder Methods Reference
-Dunder
-Operator / Function
-__add__
-+
-__sub__
--
-__mul__
-*
-__truediv__
-/
-__eq__
-==
-__lt__
-<
-__le__
-<=
-__len__
-len()
-__str__
-str() / print()
-__repr__
-repr() / debugging
-__contains__
-in
-__getitem__
-obj[key]
-Quick Recap
-Concept
-One-liner
-Inheritance
-Child reuses/extends parent
-Multiple Inheritance
-One child, many parents
-Multilevel Inheritance
-Grandparent → Parent → Child chain
-super()
-Access parent safely, follows MRO
-Instance Method
-Works on self
-Class Method
-Works on cls, good for alt constructors
-Static Method
-Utility, no self/cls
-@property
-Attribute-style access with validation
-Operator Overloading
-Custom behavior for +, ==, etc.
+```
+
