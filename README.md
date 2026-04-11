@@ -271,7 +271,6 @@ print(v1 < v2)    # False
 print(len(v1))    # 3
 ```
 
-
 ## Author
 Created as part of Python learning journey to strengthen programming fundamentals and logical thinking.
 
