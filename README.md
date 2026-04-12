@@ -271,6 +271,14 @@ print(v1 < v2)    # False
 print(len(v1))    # 3
 ```
 
+## How to Run
+
+1. Make sure Python is installed on your system.
+2. Clone this repository or download the file.
+https://github.com/sabaansari7110-max/Rock-Paper-Scissor-game.git
+3. Open terminal in the project folder.
+4. Run the code.
+
 ## Author
 Created as part of Python learning journey to strengthen programming fundamentals and logical thinking.
 
