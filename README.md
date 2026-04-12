@@ -275,7 +275,7 @@ print(len(v1))    # 3
 
 1. Make sure Python is installed on your system.
 2. Clone this repository or download the file.
-https://github.com/sabaansari7110-max/Rock-Paper-Scissor-game.git
+                             https://github.com/sabaansari7110-max/OOPs-inheritance.git
 3. Open terminal in the project folder.
 4. Run the code.
 
