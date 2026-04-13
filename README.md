@@ -311,16 +311,20 @@ print(len(v1))    # 3
 
 1. Make sure Python is installed on your system.
 2. Clone this repository or download the file.
- <br>
+    <br>
 3. ```markdown
    https://github.com/sabaansari7110-max/OOPs-inheritance.git
+   ```
+    <br>
 4. Open terminal in the project folder.
 5. Run the code.
+
 ## Running the Examples
 All examples are in the examples/ folder. Run them with:
 ```text
 practice set/01_create_class_2-D,3-Dvector.py
 ```
+
 ## Author
 Created as part of Python learning journey to strengthen programming fundamentals and logical thinking.
 
