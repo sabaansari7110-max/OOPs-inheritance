@@ -311,9 +311,12 @@ print(len(v1))    # 3
 
 1. Make sure Python is installed on your system.
 2. Clone this repository or download the file.
-                             https://github.com/sabaansari7110-max/OOPs-inheritance.git
-3. Open terminal in the project folder.
-4. Run the code.
+                             ```markdown
+   https://github.com/sabaansari7110-max/OOPs-inheritance.git
+4. Open terminal in the project folder.
+5. Run the code.
+## Running the Examples
+All examples are in the examples/ folder. Run them with:
 
 ## Author
 Created as part of Python learning journey to strengthen programming fundamentals and logical thinking.
