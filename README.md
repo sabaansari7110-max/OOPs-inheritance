@@ -314,13 +314,12 @@ print(len(v1))    # 3
     <br>
 3. ```markdown
    https://github.com/sabaansari7110-max/OOPs-inheritance.git
-   ```
-    <br>
+   ``` <br>
 4. Open terminal in the project folder.
 5. Run the code.
 
 ## Running the Examples
-All examples are in the examples/ folder. Run them with:
+All examples are in thepractice set folder. Run them with:
 ```text
 practice set/01_create_class_2-D,3-Dvector.py
 ```
