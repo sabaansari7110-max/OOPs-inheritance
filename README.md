@@ -271,6 +271,42 @@ print(v1 < v2)    # False
 print(len(v1))    # 3
 ```
 
+## Common Magic Methods (Dunder Methods)
+
+| Category                  | Operator / Function      | Magic Method                          | Description |
+|---------------------------|--------------------------|---------------------------------------|-------------|
+| **Initialization**        | `obj = Class()`          | `__init__(self, ...)`                | Constructor - initializes the object |
+| **Representation**        | `str(obj)` / `print(obj)`| `__str__(self)`                      | Human-readable string representation |
+| **Representation**        | `repr(obj)`              | `__repr__(self)`                     | Official / debugging string (should be unambiguous) |
+| **Arithmetic**            | `+`                      | `__add__(self, other)`               | Addition (also supports `__radd__` for right-side) |
+| **Arithmetic**            | `-`                      | `__sub__(self, other)`               | Subtraction |
+| **Arithmetic**            | `*`                      | `__mul__(self, other)`               | Multiplication |
+| **Arithmetic**            | `/`                      | `__truediv__(self, other)`           | True division (float) |
+| **Arithmetic**            | `//`                     | `__floordiv__(self, other)`          | Floor division |
+| **Arithmetic**            | `%`                      | `__mod__(self, other)`               | Modulo / remainder |
+| **Arithmetic**            | `**`                     | `__pow__(self, other)`               | Exponentiation |
+| **Unary**                 | `-obj`                   | `__neg__(self)`                      | Negation |
+| **Unary**                 | `+obj`                   | `__pos__(self)`                      | Unary plus |
+| **Unary**                 | `abs(obj)`               | `__abs__(self)`                      | Absolute value |
+| **Comparison**            | `==`                     | `__eq__(self, other)`                | Equal to |
+| **Comparison**            | `!=`                     | `__ne__(self, other)`                | Not equal to |
+| **Comparison**            | `<`                      | `__lt__(self, other)`                | Less than |
+| **Comparison**            | `<=`                     | `__le__(self, other)`                | Less than or equal |
+| **Comparison**            | `>`                      | `__gt__(self, other)`                | Greater than |
+| **Comparison**            | `>=`                     | `__ge__(self, other)`                | Greater than or equal |
+| **Container**             | `len(obj)`               | `__len__(self)`                      | Length of the object |
+| **Container**             | `obj[key]`               | `__getitem__(self, key)`             | Get item by index/key |
+| **Container**             | `obj[key] = value`       | `__setitem__(self, key, value)`      | Set item |
+| **Container**             | `del obj[key]`           | `__delitem__(self, key)`             | Delete item |
+| **Container**             | `item in obj`            | `__contains__(self, item)`           | Membership test |
+| **Iteration**             | `iter(obj)`              | `__iter__(self)`                     | Return iterator object |
+| **Callable**              | `obj()`                  | `__call__(self, ...)`                | Make instance callable like a function |
+| **Context Manager**       | `with obj:`              | `__enter__(self)` / `__exit__(self, ...)` | Support for `with` statement |
+| **Boolean**               | `bool(obj)`              | `__bool__(self)`                     | Truth value testing (fallback to `__len__`) |
+| **Hashing**               | `hash(obj)` / dict key   | `__hash__(self)`                     | Make object hashable |
+| **String Formatting**     | `format(obj)`            | `__format__(self, format_spec)`      | Custom formatting |
+| **Attribute Access**      | `obj.attr`               | `__getattr__(self, name)`            | Fallback when attribute not found |
+
 ## How to Run
 
 1. Make sure Python is installed on your system.
