@@ -312,11 +312,11 @@ print(len(v1))    # 3
 1. Make sure Python is installed on your system.
 2. Clone this repository or download the file.
     <br>
-3. ```markdown
+ ```markdown
    https://github.com/sabaansari7110-max/OOPs-inheritance.git
    ```
-4. Open terminal in the project folder.
-5. Run the code.
+3. Open terminal in the project folder.
+4. Run the code.
 
 ## Running the Examples
 All examples are in thepractice set folder. Run them with:
