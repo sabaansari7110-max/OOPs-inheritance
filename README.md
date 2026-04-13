@@ -314,7 +314,7 @@ print(len(v1))    # 3
     <br>
 3. ```markdown
    https://github.com/sabaansari7110-max/OOPs-inheritance.git
-   ``` <br>
+   ```
 4. Open terminal in the project folder.
 5. Run the code.
 
