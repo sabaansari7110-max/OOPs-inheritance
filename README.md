@@ -307,6 +307,19 @@ print(len(v1))    # 3
 | **String Formatting**     | `format(obj)`            | `__format__(self, format_spec)`      | Custom formatting |
 | **Attribute Access**      | `obj.attr`               | `__getattr__(self, name)`            | Fallback when attribute not found |
 
+
+## Best Practices & Tips
+1.Always use super() instead of hardcoding parent class names — especially in multiple inheritance.
+Follow MRO: Understand Class.mro() to avoid unexpected behavior in multiple inheritance.
+Prefer composition over deep inheritance when possible (has-a relationship).
+Use @property for controlled attribute access instead of raw getters/setters.
+Keep inheritance hierarchies shallow and logical.
+Document your classes and use meaningful names.
+Test edge cases in operator overloading and multiple inheritance.
+Common Pitfalls
+Diamond Problem in multiple inheritance (solved by MRO in Python).
+Forgetting to call super().__init__() in child classes.
+Overusing inheritance — sometimes a simple function or composition is better.
 ## How to Run
 
 1. Make sure Python is installed on your system.
