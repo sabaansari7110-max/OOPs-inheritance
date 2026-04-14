@@ -310,9 +310,9 @@ print(len(v1))    # 3
 
 ## Best Practices & Tips
 <br>
-1.**Always use super()** instead of hardcoding parent class names — especially in multiple inheritance.
+1. **Always use super()** instead of hardcoding parent class names — especially in multiple inheritance.
 <br>
-2.**Follow MRO:** Understand Class.mro() to avoid unexpected behavior in multiple inheritance.
+2. **Follow MRO:** Understand Class.mro() to avoid unexpected behavior in multiple inheritance.
 <br>
 3. Prefer composition over deep inheritance when possible (has-a relationship).
 <br>
@@ -328,7 +328,7 @@ print(len(v1))    # 3
 <br>
 1. Diamond Problem in multiple inheritance (solved by MRO in Python).
 <br>
-2. Forgetting to call**super().__init__()** in child classes.
+2. Forgetting to call **super().__init__()** in child classes.
 <br>
 3. Overusing inheritance — sometimes a simple function or composition is better.
 
