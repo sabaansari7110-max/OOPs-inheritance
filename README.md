@@ -310,13 +310,13 @@ print(len(v1))    # 3
 
 ## Best Practices & Tips
 <br>
-1. Always use super() instead of hardcoding parent class names — especially in multiple inheritance.
+1. **Always use super()** instead of hardcoding parent class names — especially in multiple inheritance.
 <br>
-2. Follow MRO: Understand Class.mro() to avoid unexpected behavior in multiple inheritance.
+2. **Follow MRO** : Understand Class.mro() to avoid unexpected behavior in multiple inheritance.
 <br>
 3. Prefer composition over deep inheritance when possible (has-a relationship).
 <br>
-4. Use @property for controlled attribute access instead of raw getters/setters.
+4. Use **@property** for controlled attribute access instead of raw getters/setters.
 <br>
 5. Keep inheritance hierarchies shallow and logical.
 <br>
